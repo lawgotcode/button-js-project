@@ -10,6 +10,10 @@ function getHex (){
 
  for(let i = 0; i<6;i++){
  let random = Math.floor(Math.random()*hexNumbers.length)
- 
+ hexCol +=hexNumbers[random];
+ // console.log(hexCol);
+
  }
+ bodyBcg.style.backgroundColor = hexCol;
+ hex.innerHTML = hexCol;
 }
